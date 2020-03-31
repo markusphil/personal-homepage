@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "projects",
+  "info": {
+    "name": "Project"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "technologies": {
+      "collection": "technology",
+      "via": "projects",
+      "dominant": true
+    },
+    "github": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    }
+  }
+}
