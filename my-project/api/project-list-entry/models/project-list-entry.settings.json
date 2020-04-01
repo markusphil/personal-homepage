@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "project_list_entries",
+  "info": {
+    "name": "Project List Entry"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "posID": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "project": {
+      "model": "project"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

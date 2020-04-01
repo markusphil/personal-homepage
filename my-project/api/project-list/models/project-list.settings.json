@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "project_lists",
+  "info": {
+    "name": "Project List"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "project_list_entries": {
+      "collection": "project-list-entry"
+    }
+  }
+}
