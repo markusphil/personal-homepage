@@ -1,0 +1,40 @@
+[
+  {
+    "category": "Languages",
+    "skills": [
+      {
+        "name": "JavaScript, HTML, CSS",
+        "rating": 9
+      },
+      {
+        "name": "TypeScript,",
+        "rating": 8
+      },
+      {
+        "name": "Java, Python, PHP,",
+        "rating": 7
+      },
+      {
+        "name": " C, C#, SQL",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "category": "Frameworks & Tools (selection)",
+    "skills": [
+      {
+        "name": "Vue.js, git,",
+        "rating": 9
+      },
+      {
+        "name": "React, Sass, npm, yarn,",
+        "rating": 7
+      },
+      {
+        "name": "GraphQL, Redux",
+        "rating": 5
+      }
+    ]
+  }
+]

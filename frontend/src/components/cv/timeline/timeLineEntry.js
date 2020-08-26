@@ -1,5 +1,3 @@
-import timeLine from "./timeLine"
-
 import React from "react"
 const TimeLineEntry = ({ start, title, desc }) => (
   <li className="tl-entry-wrapper">

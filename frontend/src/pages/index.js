@@ -1,18 +1,23 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 
 import SEO from "../components/seo"
-import TimeLine from "../components/timeline/timeLine"
+import TimeLine from "../components/cv/timeline/timeLine"
+import SkillList from "../components/cv/skills/SkillList"
 
 import education from "../jsonDataSource/education.json"
+import skills from "../jsonDataSource/skills.json"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <TimeLine title={"Education"} entries={education} />
-    <Link to="/page-2/">Go to page 2</Link>
+    <div class="col-lg-8">
+      <TimeLine title={"Education"} entries={education} />
+    </div>
+    <div class="col-lg-4">
+      <SkillList skillCats={skills} />
+    </div>
   </Layout>
 )
 
