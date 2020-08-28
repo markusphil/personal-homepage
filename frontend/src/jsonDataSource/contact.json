@@ -1,0 +1,12 @@
+[
+  {
+    "icon": ["fab", "github"],
+    "name": "github",
+    "url": "https://github.com/markusphil"
+  },
+  {
+    "icon": ["fas", "envelope"],
+    "name": "m_philipp@gmx.net",
+    "url": "mailto:m_philipp@gmx.net"
+  }
+]

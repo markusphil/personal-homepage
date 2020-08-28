@@ -12,6 +12,11 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
+import { library } from "@fortawesome/fontawesome-svg-core"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+library.add(faGithub, faEnvelope)
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
