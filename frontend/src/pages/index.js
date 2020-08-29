@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 
@@ -10,7 +11,7 @@ import TabList from "../components/general/tabList"
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <div class="col-lg-8">
+    <div className="col-lg-8">
       <TabList>
         <TimeLine
           title={"Education"}
@@ -23,7 +24,7 @@ const IndexPage = ({ data }) => (
         <div title={"TEST"}>TEST</div>
       </TabList>
     </div>
-    <div class="col-lg-4">
+    <div className="col-lg-4">
       <SkillList skillCats={data.allSkillsJson.edges.map(e => e.node)} />
     </div>
   </Layout>

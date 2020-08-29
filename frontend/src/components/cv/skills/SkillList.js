@@ -3,7 +3,7 @@ import WordCloud from "./wordCloud"
 
 const SkillList = ({ skillCats }) => {
   return skillCats.map(cat => (
-    <div>
+    <div key={cat.category}>
       <h3>{cat.category}</h3>
       <WordCloud entries={cat.skills} />
     </div>

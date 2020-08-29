@@ -19,8 +19,6 @@ const Header = ({ siteTitle }) => {
     }
   `)
 
-  console.log(data)
-
   return (
     <header
       style={{

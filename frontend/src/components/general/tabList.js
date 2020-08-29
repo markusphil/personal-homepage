@@ -3,7 +3,7 @@ import React, { useState } from "react"
 const TabList = ({ children }) => {
   const [activeTab, setActiveTab] = useState(0)
   const headlines = children.map((child, index) => (
-    <li>
+    <li key={index}>
       <button onClick={() => setActiveTab(index)}>{child.props.title}</button>
     </li>
   ))

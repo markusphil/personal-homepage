@@ -1,8 +1,10 @@
 import React from "react"
 import TimeLineEntry from "./timeLineEntry"
 
-const TimeLine = ({ title, entries }) => {
-  const tlEntries = entries.map(entry => <TimeLineEntry {...entry} />)
+const TimeLine = ({ entries }) => {
+  const tlEntries = entries.map((entry, i) => (
+    <TimeLineEntry key={i} {...entry} />
+  ))
 
   return (
     <div className="time-line-wrapper">
