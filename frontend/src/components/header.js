@@ -3,7 +3,31 @@ import React from "react"
 import ContactBox from "./cv/contactBox"
 import { graphql, useStaticQuery } from "gatsby"
 
-const Header = ({ siteTitle }) => {
+import { Row, Col } from "./styled/general"
+import { colors } from "./styled/variables"
+import styled from "styled-components"
+
+const Title = styled(Col)`
+  h1 {
+    color: ${colors.TEXT};
+    font-weight: 200;
+    font-size: 3rem;
+    margin: 0;
+  }
+  p {
+    color: ${colors.TEXT_LIGHT};
+    font-weight: 100;
+    font-size: 1.5rem;
+  }
+`
+
+const StyledHeader = styled.header`
+  max-width: 1200px;
+  margin: auto;
+  padding: 3rem 2rem;
+`
+
+const Header = ({ siteTitle, siteSubTitle }) => {
   const data = useStaticQuery(graphql`
     query {
       allContactJson {
@@ -20,20 +44,19 @@ const Header = ({ siteTitle }) => {
   `)
 
   return (
-    <header
-      style={{
-        background: `rebeccapurple`,
-        marginBottom: `1.45rem`,
-        display: `flex`,
-        justifyContent: `space-between`,
-      }}
-    >
-      <div>
-        <h1 style={{ margin: 0 }}>{siteTitle}</h1>
-        <p className="subtitle">Student Web Developer</p>
-      </div>
-      <ContactBox entries={data.allContactJson.edges.map(edge => edge.node)} />
-    </header>
+    <StyledHeader>
+      <Row alignItems="center">
+        <Title>
+          <h1>{siteTitle}</h1>
+          <p>{siteSubTitle}</p>
+        </Title>
+        <Col isFixed>
+          <ContactBox
+            entries={data.allContactJson.edges.map(edge => edge.node)}
+          />
+        </Col>
+      </Row>
+    </StyledHeader>
   )
 }
 Header.propTypes = {

@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Lebenslauf: Markus Philipp`,
-    description: `finally a fancy Web-based CV with gatsbyJS`,
+    title: `Markus Philipp`,
+    subtitle: `Student Web Developer`,
+    description: `My fancy web-based CV with gatsbyJS using react, graphQL and styled-components`,
     author: `Markus Philipp`,
   },
   plugins: [
@@ -14,6 +15,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
