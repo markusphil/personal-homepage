@@ -5,10 +5,11 @@ import Layout from "../components/layout"
 
 import SEO from "../components/seo"
 import TimeLine from "../components/cv/timeline/timeLine"
-import SkillList from "../components/cv/skills/SkillList"
+import SkillCloud from "../components/cv/skills/SkillCloud"
 import TabList from "../components/general/tabList"
 
 import { Row, Col, Headline2 } from "../components/styled/general"
+import SkillSection from "../components/cv/skills/SkillSection"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -24,15 +25,18 @@ const IndexPage = ({ data }) => (
               "* Derzeit hole ich einige Informatikkurse nach, bevor ich den Wechsel des Zweitfaches offziel abschließen kann."
             }
           />
-
           <TimeLine
             title={"Practical Experiences"}
             entries={data.allPracticalJson.edges.map(e => e.node)}
           />
+          <SkillSection
+            title="Soft Skills"
+            content={data.allSoftSkillsJson.edges.map(e => e.node)}
+          />
         </TabList>
       </Col>
       <Col widthMd="25%">
-        <SkillList
+        <SkillCloud
           title="Relevant Skills"
           skillCats={data.allSkillsJson.edges.map(e => e.node)}
         />
@@ -72,6 +76,18 @@ export const query = graphql`
           skills {
             name
             rating
+          }
+        }
+      }
+    }
+    allSoftSkillsJson {
+      edges {
+        node {
+          headline
+          type
+          entries {
+            title
+            descr
           }
         }
       }

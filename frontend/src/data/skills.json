@@ -32,8 +32,12 @@
         "rating": 7
       },
       {
-        "name": "GraphQL, Redux",
+        "name": "GraphQL, Redux, Bootstrap, Bulma",
         "rating": 5
+      },
+      {
+        "name": "Docker, Webpack, jquery ",
+        "rating": 3
       }
     ]
   }

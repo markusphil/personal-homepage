@@ -14,7 +14,7 @@ const RatingText = styled.span(props => {
   if (props.rating > 3) color = colors.TEXT_LIGHT
   if (props.rating > 4) size = "1.2rem"
   if (props.rating > 5) color = color.TEXT
-  if (props.rating > 6) size = "1.4rem"
+  if (props.rating > 7) size = "1.4rem"
   if (props.rating > 8) size = fontSizes.H3
 
   return `

@@ -1,0 +1,38 @@
+[
+  {
+    "headline": "Sprachkenntnisse",
+    "type": "table",
+    "entries": [
+      {
+        "title": "Deutsch:",
+        "descr": "Muttersprache"
+      },
+      {
+        "title": "Englisch:",
+        "descr": "Fließend(C1+)"
+      }
+    ]
+  },
+  {
+    "headline": "Allgemeine Erfahrungen",
+    "type": "list",
+    "entries": [
+      {
+        "title": "",
+        "descr": "Projektmanagement"
+      },
+      {
+        "title": "",
+        "descr": "Veranstaltungsorganisation"
+      },
+      {
+        "title": "",
+        "descr": "Kommunikation mit Kunden und Projektpartnern"
+      },
+      {
+        "title": "",
+        "descr": "Teamarbeit und Teamplanung"
+      }
+    ]
+  }
+]
