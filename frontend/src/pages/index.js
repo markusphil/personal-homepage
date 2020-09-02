@@ -10,6 +10,7 @@ import TabList from "../components/general/tabList"
 
 import { Row, Col, Headline2 } from "../components/styled/general"
 import SkillSection from "../components/cv/skills/SkillSection"
+import ProjectCardRow from "../components/projects/projectCardRow"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -42,6 +43,11 @@ const IndexPage = ({ data }) => (
         />
       </Col>
     </Row>
+    <Headline2>Projekte</Headline2>
+    <ProjectCardRow entries={data.allProjectsJson.edges.map(e => e.node)} />
+    <p>
+      Weitere Projekte auf <a href="https://github.com/markusphil">Github</a>
+    </p>
   </Layout>
 )
 
@@ -89,6 +95,15 @@ export const query = graphql`
             title
             descr
           }
+        }
+      }
+    }
+    allProjectsJson {
+      edges {
+        node {
+          title
+          descr
+          url
         }
       }
     }
