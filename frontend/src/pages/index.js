@@ -8,28 +8,34 @@ import TimeLine from "../components/cv/timeline/timeLine"
 import SkillList from "../components/cv/skills/SkillList"
 import TabList from "../components/general/tabList"
 
-import { Row, Col } from "../components/styled/general"
+import { Row, Col, Headline2 } from "../components/styled/general"
 
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Lebenslauf: Markus Philipp" />
-
+    <Headline2>Lebenslauf</Headline2>
     <Row>
       <Col widthMd="75%">
         <TabList>
           <TimeLine
             title={"Education"}
             entries={data.allEducationJson.edges.map(e => e.node)}
+            hint={
+              "* Derzeit hole ich einige Informatikkurse nach, bevor ich den Wechsel des Zweitfaches offziel abschließen kann."
+            }
           />
+
           <TimeLine
-            title={"Practical Experiances"}
+            title={"Practical Experiences"}
             entries={data.allPracticalJson.edges.map(e => e.node)}
           />
-          <div title={"TEST"}>TEST</div>
         </TabList>
       </Col>
       <Col widthMd="25%">
-        <SkillList skillCats={data.allSkillsJson.edges.map(e => e.node)} />
+        <SkillList
+          title="Relevant Skills"
+          skillCats={data.allSkillsJson.edges.map(e => e.node)}
+        />
       </Col>
     </Row>
   </Layout>

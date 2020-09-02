@@ -3,15 +3,15 @@
     "category": "Languages",
     "skills": [
       {
-        "name": "JavaScript, HTML, CSS",
+        "name": "JavaScript, HTML, CSS, ",
         "rating": 9
       },
       {
-        "name": "TypeScript,",
+        "name": "TypeScript, ",
         "rating": 8
       },
       {
-        "name": "Java, Python, PHP,",
+        "name": "Java, Python, PHP, ",
         "rating": 7
       },
       {
@@ -21,14 +21,14 @@
     ]
   },
   {
-    "category": "Frameworks & Tools (selection)",
+    "category": "Frameworks & Tools",
     "skills": [
       {
-        "name": "Vue.js, git,",
+        "name": "Vue.js, git, ",
         "rating": 9
       },
       {
-        "name": "React, Sass, npm, yarn,",
+        "name": "React, Sass, npm, yarn, ",
         "rating": 7
       },
       {

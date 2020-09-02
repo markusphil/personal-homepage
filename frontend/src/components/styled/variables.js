@@ -11,3 +11,11 @@ const BORDER = `border: 1px solid ${TEXT}`
 const BORDER_BOTTOM = `border-bottom: 1px solid ${TEXT}`
 
 export const borders = { BORDER, BORDER_BOTTOM }
+
+//fontsizes
+const H1 = "3rem"
+const H2 = "2rem"
+const H3 = "1.5rem"
+const P = "1rem"
+
+export const fontSizes = { H1, H2, H3, P }

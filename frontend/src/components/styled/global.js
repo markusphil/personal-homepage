@@ -1,7 +1,5 @@
 import { createGlobalStyle } from "styled-components"
-import { colors } from "./variables"
-
-// TODO: add
+import { colors, fontSizes } from "./variables"
 
 export default createGlobalStyle`
 body {
@@ -32,8 +30,14 @@ p{
     margin-top:0
 }
 
+button {
+    font-family: roboto, sans-serif;
+}
 
-
-
-
+h4 {
+    color: ${colors.WHITE};
+    font-size: ${fontSizes.P};
+    font-weight: normal;
+    margin: 0 0 .5rem 0;
+}
 `

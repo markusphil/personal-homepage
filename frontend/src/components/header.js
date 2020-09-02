@@ -46,11 +46,11 @@ const Header = ({ siteTitle, siteSubTitle }) => {
   return (
     <StyledHeader>
       <Row alignItems="center">
-        <Title>
+        <Title shrinks grows widthMd="50%">
           <h1>{siteTitle}</h1>
           <p>{siteSubTitle}</p>
         </Title>
-        <Col isFixed>
+        <Col width="auto" widthLg="25%">
           <ContactBox
             entries={data.allContactJson.edges.map(edge => edge.node)}
           />
