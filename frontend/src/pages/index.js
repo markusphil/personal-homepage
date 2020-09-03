@@ -8,7 +8,7 @@ import TimeLine from "../components/cv/timeline/timeLine"
 import SkillCloud from "../components/cv/skills/SkillCloud"
 import TabList from "../components/general/tabList"
 
-import { Row, Col, Headline2 } from "../components/styled/general"
+import { Row, Col, Headline2, TextCenter } from "../components/styled/general"
 import SkillSection from "../components/cv/skills/SkillSection"
 import ProjectCardRow from "../components/projects/projectCardRow"
 
@@ -45,9 +45,9 @@ const IndexPage = ({ data }) => (
     </Row>
     <Headline2>Projekte</Headline2>
     <ProjectCardRow entries={data.allProjectsJson.edges.map(e => e.node)} />
-    <p>
+    <TextCenter>
       Weitere Projekte auf <a href="https://github.com/markusphil">Github</a>
-    </p>
+    </TextCenter>
   </Layout>
 )
 

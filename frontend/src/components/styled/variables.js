@@ -7,10 +7,19 @@ const TEXT_LIGHTER = "#B2B2B2"
 export const colors = { BACKGROUND, TEXT, TEXT_LIGHT, TEXT_LIGHTER }
 
 //borders
-const BORDER = `border: 1px solid ${TEXT}`
-const BORDER_BOTTOM = `border-bottom: 1px solid ${TEXT}`
+const BORDER = `border: 1px solid ${TEXT};`
+const BORDER_BOTTOM = `border-bottom: 1px solid ${TEXT};`
+const BORDER_LEFT = `border-left: 1px solid ${TEXT};`
+const BORDER_RIGHT = `border-right: 1px solid ${TEXT};`
+const BORDER_TOP = `border-top: 1px solid ${TEXT};`
 
-export const borders = { BORDER, BORDER_BOTTOM }
+export const borders = {
+  BORDER,
+  BORDER_BOTTOM,
+  BORDER_LEFT,
+  BORDER_RIGHT,
+  BORDER_TOP,
+}
 
 //fontsizes
 const H1 = "3rem"

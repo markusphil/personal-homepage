@@ -10,8 +10,9 @@ const ProjectLink = styled.a`
   cursor: pointer;
   height: calc(100% - 2rem);
   padding: 1rem;
+  transition: all .3s ease
   &:hover {
-    box-shadow: 6px 7px 33px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 7px 33px 0px rgba(0, 0, 0, 0.25);
   }
   &:visited {
     color: ${colors.TEXT};
@@ -19,7 +20,7 @@ const ProjectLink = styled.a`
 `
 
 const ProjectCard = ({ title, descr, url }) => (
-  <Col width="33%">
+  <Col widthMd="33%">
     <ProjectLink href={url} target="_blank">
       <h4>{title}</h4>
       <p>{descr}</p>

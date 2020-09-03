@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { borders } from "../styled/variables"
 
 const StyledContactBox = styled.ul`
-  padding: 0.5rem;
+  padding: 1rem;
   margin: 0;
   ${borders.BORDER};
 

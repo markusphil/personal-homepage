@@ -25,8 +25,8 @@ const SkillCmpFactory = content => {
 }
 
 const SkillSection = ({ content }) => {
-  return content.map(c => (
-    <Wrapper>
+  return content.map((c, i) => (
+    <Wrapper key={i}>
       <h4>{c.headline}</h4>
       {SkillCmpFactory(c)}
     </Wrapper>

@@ -6,6 +6,7 @@ export const Row = styled.div`
   flex-wrap: wrap;
   align-items: ${props => props.alignItems || "flex-start"};
   justify-content: ${props => props.justifyContent || "space-between"};
+  ${props => props.margin && `margin: 2rem 0`}
 `
 
 export const Col = styled.div`
@@ -64,4 +65,8 @@ export const List = styled.ul`
       background-color: ${colors.TEXT};
     }
   }
+`
+
+export const TextCenter = styled.p`
+  text-align: center;
 `

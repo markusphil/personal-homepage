@@ -43,7 +43,7 @@ const TimeLineEntry = ({ start, title, desc }) => (
       <span>{start}</span>
     </Bullet>
     <Text>
-      <h5>{title}</h5>
+      <h4>{title}</h4>
       <p>{desc}</p>
     </Text>
   </StyledTimeLineEntry>
