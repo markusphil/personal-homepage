@@ -1,14 +1,19 @@
 import React from "react"
 import { Row, Col } from "../../styled/general"
+import styled from "styled-components"
+
+const TableCell = styled.div`
+  margin-bottom: 0.25rem;
+`
 
 const SkillTable = ({ entries }) =>
   entries.map(e => (
     <Row>
       <Col width="25%">
-        <p>{e.title}</p>
+        <TableCell>{e.title}</TableCell>
       </Col>
       <Col width="75%">
-        <p>{e.descr}</p>
+        <TableCell>{e.descr}</TableCell>
       </Col>
     </Row>
   ))

@@ -13,11 +13,11 @@ body {
   word-wrap: break-word;
 }
 
-button{
+button {
     cursor:pointer;
 }
 
-a{
+a {
     color: ${colors.TEXT};
     cursor: pointer;
 }
@@ -26,7 +26,7 @@ a:visited {
     color: ${colors.TEXT_LIGHTER};
 }
 
-p{
+p {
     margin-top:0
 }
 
@@ -40,4 +40,10 @@ h4 {
     font-weight: normal;
     margin: 0 0 .5rem 0;
 }
+
+li {
+    list-style: none;
+    padding: 0;
+}
+
 `

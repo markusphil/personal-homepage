@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import SkillList from "./SkillList"
 import SkillTable from "./SkillTable"
+import { List } from "../../styled/general"
 
 const Wrapper = styled.div`
   padding: 0 2rem 0rem 6rem;
@@ -14,9 +15,9 @@ const SkillCmpFactory = content => {
       return <SkillTable entries={content.entries} />
     case "list":
       return (
-        <ul>
+        <List>
           <SkillList entries={content.entries} />
-        </ul>
+        </List>
       )
     default:
       return null
