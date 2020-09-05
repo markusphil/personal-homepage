@@ -40,5 +40,18 @@
         "rating": 3
       }
     ]
+  },
+  {
+    "category": "Design Tools",
+    "skills": [
+      {
+        "name": "figma, Illustrator, Photoshop, ",
+        "rating": 6
+      },
+      {
+        "name": " Sketch, Invision, Zeplin",
+        "rating": 4
+      }
+    ]
   }
 ]

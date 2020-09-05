@@ -1,26 +1,34 @@
 [
   {
-    "start": "2011",
-    "end": "2015",
-    "title": "Jugendzentrum Altena",
-    "desc": "Betreuer und Einrichtungsleiter"
+    "start": "2014",
+    "end": "2014",
+    "title": "Praktikum: BMW AG",
+    "desc": "Ressourcensteuerung im Bereich elektrischer Antriebssysteme"
   },
   {
     "start": "2015",
     "end": "2018",
-    "title": "CareerCenter CAU",
-    "desc": "HiWi und Werkstudent \nOrganisation des Seminarbetriebs, sowie der Firmenkontaktmesse contacts"
+    "title": "Career Center (CAU Kiel)",
+    "desc": "HiWi und Werkstudent \nOrganisation des Seminarbetriebs und der Firmenkontaktmesse 'contacts'"
+  },
+  {
+    "start": "2018",
+    "end": "2018",
+    "title": "Lehrstuhl: Philosophie und Ethik der Umwelt (CAU Kiel)",
+    "desc": "Protokollierung und Moderation beim Bürgerforum 'Climate Engineering'"
   },
   {
     "start": "2019",
     "end": "2020",
     "title": "OpenTechSchool Leipzig",
-    "desc": "Mitglied und Co-Organisator"
+    "desc": "Mitglied und Co-Organisator",
+    "url": "https://www.opentechschool.org/"
   },
   {
     "start": "Seit 2019",
-    "end": "2020",
+    "end": "null",
     "title": "ONEDOT GmbH",
-    "desc": "Werkstudent: Frontend-Entwickler"
+    "desc": "Werkstudent: Frontend-Entwickler",
+    "url": "https://one-dot.de/"
   }
 ]

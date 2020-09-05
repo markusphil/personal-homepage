@@ -8,6 +8,7 @@ const TabNav = styled.ul`
   margin: 0;
   margin-left: -0.5rem;
   display: flex;
+  flex-wrap: wrap;
 `
 const TabNavItem = styled.li`
   list-style: none;
@@ -21,7 +22,8 @@ const TabNavItem = styled.li`
     font-size: ${fontSizes.H3};
     font-weight: 100;
     outline: none;
-    transiton: all 0.3s ease;
+    transition: all 0.3s ease;
+    white-space: nowrap;
 
     &:focused {
       outline: none;

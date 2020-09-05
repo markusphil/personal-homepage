@@ -7,7 +7,7 @@ const TimeLineList = styled.div`
   margin: 2rem 0;
 `
 const Hint = styled.p`
-  padding: 0 2rem 0.5rem 6rem;
+  padding: 0 2rem 0.5rem 3rem;
   font-size: 0.8rem;
 `
 

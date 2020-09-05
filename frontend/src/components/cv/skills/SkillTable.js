@@ -12,7 +12,7 @@ const SkillTable = ({ entries }) =>
       <Col width="25%">
         <TableCell>{e.title}</TableCell>
       </Col>
-      <Col width="75%">
+      <Col width="60%">
         <TableCell>{e.descr}</TableCell>
       </Col>
     </Row>

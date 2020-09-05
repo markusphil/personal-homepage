@@ -16,8 +16,21 @@ import GlobalStyle from "./styled/global"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
-library.add(faGithub, faEnvelope)
+import {
+  faEnvelope,
+  faExternalLinkAlt,
+} from "@fortawesome/free-solid-svg-icons"
+import styled from "styled-components"
+import { borders } from "./styled/variables"
+library.add(faGithub, faEnvelope, faExternalLinkAlt)
+
+const Footer = styled.footer`
+  padding: 1rem;
+  margin: 3rem 0 1rem;
+  max-width: 260px;
+  text-align: center;
+  ${borders.BORDER};
+`
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -40,11 +53,11 @@ const Layout = ({ children }) => {
       />
       <Container>
         <main>{children}</main>
-        <footer>
+        <Footer>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        </Footer>
       </Container>
     </>
   )

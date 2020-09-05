@@ -5,8 +5,12 @@ import SkillTable from "./SkillTable"
 import { List } from "../../styled/general"
 
 const Wrapper = styled.div`
-  padding: 0 2rem 0rem 6rem;
+  padding: 0 2rem 0 0;
   margin: 2rem 0;
+
+  @media screen and (min-width: 900px) {
+    padding: 0 2rem 0 3rem;
+  }
 `
 
 const SkillCmpFactory = content => {

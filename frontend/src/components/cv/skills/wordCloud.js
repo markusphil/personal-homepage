@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { colors, fontSizes } from "../../styled/variables"
+import { colors } from "../../styled/variables"
 
 const WordCloudContainer = styled.div`
   margin-bottom: 2rem;
@@ -8,18 +8,19 @@ const WordCloudContainer = styled.div`
 
 const RatingText = styled.span(props => {
   let color = colors.TEXT_LIGHTER
-  let size = "1rem"
+  let size = 1
   let fontWeight = "100"
 
   if (props.rating > 3) color = colors.TEXT_LIGHT
-  if (props.rating > 4) size = "1.2rem"
-  if (props.rating > 5) color = color.TEXT
-  if (props.rating > 7) size = "1.4rem"
-  if (props.rating > 8) size = fontSizes.H3
+  if (props.rating > 4) size = 1.2
+  if (props.rating > 5) color = colors.TEXT
+  if (props.rating > 7) size = 1.4
+  if (props.rating > 8) size = 1.5
 
   return `
       color: ${color};
-      font-size: ${size};
+      font-size: ${size}rem;
+      line-height: ${size + 0.3}rem;
       font-weight: ${fontWeight};
   `
 })

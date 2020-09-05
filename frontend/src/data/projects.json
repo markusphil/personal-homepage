@@ -6,12 +6,12 @@
   },
   {
     "title": "Vue.js Evaluation Tool",
-    "descr": "An Evaluation tool build and maintained for the OpenTechSchool",
+    "descr": "An evaluation tool build and maintained as a learners project for OpenTechSchool Leipzig",
     "url": "https://github.com/OpenTechSchool-Leipzig/poll_app"
   },
   {
     "title": "React/GraphQL Meetup-clone",
-    "descr": "A Simple GraphQL API connected to a MongoDB Database as Backend with a react Frontend",
+    "descr": "A simple GraphQL API connected to a MongoDB Database and consumed by a React Frontend",
     "url": "https://github.com/markusphil/joinIn"
   }
 ]

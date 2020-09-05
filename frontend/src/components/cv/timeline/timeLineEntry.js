@@ -30,23 +30,42 @@ const Bullet = styled.div`
   }
 `
 const Text = styled.div`
-  h5 {
+  h4 {
     font-size: ${fontSizes.P};
     font-weigth: normal;
     margin: 0 0 0.5rem 0;
   }
+  p:not(:last-child) {
+    margin: 0;
+  }
 `
 
-const TimeLineEntry = ({ start, title, desc }) => (
-  <StyledTimeLineEntry>
-    <Bullet>
-      <span>{start}</span>
-    </Bullet>
-    <Text>
-      <h4>{title}</h4>
-      <p>{desc}</p>
-    </Text>
-  </StyledTimeLineEntry>
-)
+const TimeLineEntry = ({ start, title, desc, url }) => {
+  const descriptionHtml = desc.split("\n").map((d, i) => <p key={i}>{d}</p>)
+  return (
+    <StyledTimeLineEntry>
+      <Bullet>
+        <span>{start}</span>
+      </Bullet>
+      <Text>
+        <h4>
+          {url ? (
+            <a
+              href={url}
+              title={title}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {title}
+            </a>
+          ) : (
+            title
+          )}
+        </h4>
+        {descriptionHtml}
+      </Text>
+    </StyledTimeLineEntry>
+  )
+}
 
 export default TimeLineEntry

@@ -20,25 +20,25 @@ const IndexPage = ({ data }) => (
       <Col widthMd="75%">
         <TabList>
           <TimeLine
-            title={"Education"}
+            title={"Ausbildung"}
             entries={data.allEducationJson.edges.map(e => e.node)}
             hint={
-              "* Derzeit hole ich einige Informatikkurse nach, bevor ich den Wechsel des Zweitfaches offziel abschließen kann."
+              "* Derzeit hole ich einige Bachelorkurse der Informatik nach, damit der Wechsel des Zweitfaches abgeschlossen werden kann."
             }
           />
           <TimeLine
-            title={"Practical Experiences"}
+            title={"Praktische Erfahrungen"}
             entries={data.allPracticalJson.edges.map(e => e.node)}
           />
           <SkillSection
-            title="Soft Skills"
+            title="Allgemeine Skills"
             content={data.allSoftSkillsJson.edges.map(e => e.node)}
           />
         </TabList>
       </Col>
       <Col widthMd="25%">
         <SkillCloud
-          title="Relevant Skills"
+          title="Fachliche Skills"
           skillCats={data.allSkillsJson.edges.map(e => e.node)}
         />
       </Col>
@@ -62,6 +62,7 @@ export const query = graphql`
           start
           title
           end
+          url
         }
       }
     }
@@ -72,6 +73,7 @@ export const query = graphql`
           start
           title
           end
+          url
         }
       }
     }

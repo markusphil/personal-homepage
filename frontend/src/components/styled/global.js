@@ -20,9 +20,14 @@ button {
 a {
     color: ${colors.TEXT};
     cursor: pointer;
+    transition: color .3s ease;
 }
 
 a:visited {
+    color: ${colors.TEXT_LIGHT};
+}
+
+a:hover {
     color: ${colors.TEXT_LIGHTER};
 }
 
