@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-import { fontSizes } from "../../styled/variables"
+import { fontSizes, colors } from "../../styled/variables"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const StyledTimeLineEntry = styled.li`
   list-style: none;
@@ -34,6 +35,18 @@ const Text = styled.div`
     font-size: ${fontSizes.P};
     font-weigth: normal;
     margin: 0 0 0.5rem 0;
+
+    a {
+      text-decoration: none;
+      &:visited:not(:hover) {
+        color: ${colors.TEXT};
+      }
+    }
+
+    svg {
+      margin-left: 0.5rem;
+      margin-bottom: 0.2rem;
+    }
   }
   p:not(:last-child) {
     margin: 0;
@@ -57,6 +70,7 @@ const TimeLineEntry = ({ start, title, desc, url }) => {
               rel="noopener noreferrer"
             >
               {title}
+              <FontAwesomeIcon icon={["fas", "external-link-alt"]} size="xs" />
             </a>
           ) : (
             title

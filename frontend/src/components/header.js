@@ -22,7 +22,7 @@ const Title = styled(Col)`
 `
 
 const StyledHeader = styled.header`
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
   padding: 3rem 2rem;
 `

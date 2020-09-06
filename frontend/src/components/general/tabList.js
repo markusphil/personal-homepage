@@ -13,6 +13,10 @@ const TabNav = styled.ul`
 const TabNavItem = styled.li`
   list-style: none;
 
+  h3 {
+    margin: 0;
+  }
+
   button {
     background: none;
     border: none;
@@ -39,7 +43,9 @@ const TabList = ({ children }) => {
   const [activeTab, setActiveTab] = useState(0)
   const headlines = children.map((child, index) => (
     <TabNavItem index={index} key={index} activeTab={activeTab}>
-      <button onClick={() => setActiveTab(index)}>{child.props.title}</button>
+      <h3>
+        <button onClick={() => setActiveTab(index)}>{child.props.title}</button>
+      </h3>
     </TabNavItem>
   ))
 

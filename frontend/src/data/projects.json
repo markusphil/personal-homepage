@@ -1,17 +1,17 @@
 [
   {
     "title": "Discord RPG Chatbot",
-    "descr": "A basic RPG Chatbot running on node.js, written in Typscript and using a SQLite-Database",
+    "descr": "Ein einfacher RPG Chatbot, basierend auf node.js, entwickelt in Typescript verbunden mit einer SQLite Datenbank",
     "url": "https://github.com/markusphil/typescript-rpg-bot"
   },
   {
     "title": "Vue.js Evaluation Tool",
-    "descr": "An evaluation tool build and maintained as a learners project for OpenTechSchool Leipzig",
+    "descr": "Ein Evaluations-Tool entwickelt und betreut im Rahmen der OpenTechSchool Leipzig",
     "url": "https://github.com/OpenTechSchool-Leipzig/poll_app"
   },
   {
     "title": "React/GraphQL Meetup-clone",
-    "descr": "A simple GraphQL API connected to a MongoDB Database and consumed by a React Frontend",
+    "descr": "Eine simple GraphQL API verknüpft mit einer MongoDB Database und einem React Frontend",
     "url": "https://github.com/markusphil/joinIn"
   }
 ]

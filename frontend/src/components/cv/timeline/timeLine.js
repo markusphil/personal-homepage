@@ -2,13 +2,14 @@ import React from "react"
 import styled from "styled-components"
 import TimeLineEntry from "./timeLineEntry"
 
-const TimeLineList = styled.div`
+const TimeLineList = styled.ul`
   padding: 0 1rem 0 0;
   margin: 2rem 0;
 `
 const Hint = styled.p`
-  padding: 0 2rem 0.5rem 3rem;
+  padding: 0 2rem 0.5rem 6rem;
   font-size: 0.8rem;
+  margin: -1.5rem 0 2rem;
 `
 
 const TimeLine = ({ entries, hint }) => {

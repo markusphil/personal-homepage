@@ -6,7 +6,7 @@ export const Row = styled.div`
   flex-wrap: wrap;
   align-items: ${props => props.alignItems || "flex-start"};
   justify-content: ${props => props.justifyContent || "space-between"};
-  ${props => props.margin && `margin: 2rem 0 1rem`}
+  ${props => props.margin && `margin: 2rem -1.5rem 1rem`}
 `
 
 export const Col = styled.div`
@@ -31,7 +31,7 @@ export const Col = styled.div`
     `}
 `
 export const Container = styled.div`
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
   padding: 0 2rem;
 `

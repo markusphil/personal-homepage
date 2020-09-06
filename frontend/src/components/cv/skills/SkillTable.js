@@ -8,8 +8,8 @@ const TableCell = styled.div`
 
 const SkillTable = ({ entries }) =>
   entries.map((e, i) => (
-    <Row key={i}>
-      <Col width="25%">
+    <Row key={i} justifyContent="flex-start">
+      <Col width="100px">
         <TableCell>{e.title}</TableCell>
       </Col>
       <Col width="60%">

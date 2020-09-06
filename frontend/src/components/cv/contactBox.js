@@ -13,7 +13,7 @@ const StyledContactBox = styled.ul`
   }
 
   li:not(:last-child) {
-    margin-bottom: 0.25rem;
+    margin-bottom: 1rem;
   }
 
   a span {
