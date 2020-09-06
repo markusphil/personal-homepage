@@ -5,5 +5,5 @@ So I thought ít would bea great idea to build my personal homepage with that se
 
 ## CV
 
-For starters I wanted to have a web-based CV instead of an old-school table layout pdf.
+For starters I wanted to have a [web-based CV](https://cv-markus-philipp.netlify.app/) instead of an old-school table layout pdf.
 It is however not hooked up to the strapi backend yet. Instead it uses simple JSON files as data source, but already consumes those through gatsby's graphQL interface.
