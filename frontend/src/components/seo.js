@@ -16,7 +16,7 @@ function SEO({ description, lang, meta, title }) {
       query {
         site {
           siteMetadata {
-            title
+            subtitle
             description
             author
           }
@@ -33,7 +33,7 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`%s | ${site.siteMetadata.subtitle}`}
       meta={[
         {
           name: `description`,
@@ -73,7 +73,7 @@ function SEO({ description, lang, meta, title }) {
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `de`,
   meta: [],
   description: ``,
 }
