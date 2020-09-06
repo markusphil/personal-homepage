@@ -12,7 +12,6 @@ const ProjectLink = styled.a`
   //height: calc(100% - 2rem);
   //padding: 1rem;
   margin: 0 1.5rem 2rem 1.5rem;
-  transition: all 0.3s ease;
   &:hover {
     h3,
     p {
@@ -32,6 +31,10 @@ const ProjectLink = styled.a`
     font-size: ${fontSizes.P};
     font-weight: normal;
     margin: 0 0 0.5rem 0;
+    transition: all 0.3s ease;
+  }
+  p {
+    transition: all 0.3s ease;
   }
 `
 

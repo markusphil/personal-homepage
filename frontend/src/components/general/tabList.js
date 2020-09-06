@@ -34,7 +34,7 @@ const TabNavItem = styled.li`
     }
 
     &:hover {
-      color: ${colors.TEXT_LIGHT};
+      color: ${colors.TEXT};
     }
   }
 `
